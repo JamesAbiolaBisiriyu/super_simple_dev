@@ -4,10 +4,17 @@
       color: white;
       border: none;
       height: 36px;
+      /*Expands the HEIGHT of the button */  
       width: 105px;
+      /* Expands the WIDTH of the button */
       border-radius: 2px;
+      /* Makes the edges of the BUTTON rounded */
       cursor: pointer;
+      /* CURSOR:POINTER MAKE THE BUTTON SUBSCRIPTION CLICKABLE */
       margin-right: 8px;
+      /* marging right creates spaces inbetween the SUBSCRIPTION BUTTON and THE JOIN BUTTON */
+      transition: opacity 0.15s;
+      /* Transition makes opacity change smoothly, */
       }
   .join-button{
     background-color: white;
@@ -28,10 +35,12 @@
     height: 38px;
     width: 72px;
     font-weight: bold;
+    /* Makes FONTS bold */
     font-size: 15px;
     border-radius: 18px;
     cursor: pointer;
   }
+  /* BUTTON changes apperance when HOVERED upon */
   .sub-button:hover{
     opacity: 0.8;
   }
@@ -42,10 +51,15 @@
     background-color: rgb(41, 118, 210);
     color: white;
   }
+  /* BUTTON changes apperance when clicked upon */
   .join-button:active{
     opacity: 0.5;
   }
+  .tweet-button:active{
+    opacity: 0.7;
+  }
 </style>
+ <!-- BUTTONS are created with different CLASS to differentiate   -->
 <button class="sub-button">SUBSCRIBE</button>
 <button class="join-button">JOIN</button>
 <button class="tweet-button">Tweet</button>
