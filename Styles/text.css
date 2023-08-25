@@ -4,7 +4,7 @@
 /* So if you notice all of our styles right now have a line called font-family: Arial. 
 Now we can actually clean this up and remove the duplication by creating a new style. */
 p{
-  font-family: arial;
+  font-family: Roboto;
  margin-top: 0px;
  margin-bottom: 0px;
  /* Css specifity keeps marging specified in style active than the general. priority given to the <p>style over general */
