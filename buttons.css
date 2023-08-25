@@ -1,0 +1,92 @@
+
+
+  .sub-button  {
+      background-color: rgb(200, 0, 0);
+      color: white;
+      border: none;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 16px;
+      padding-right: 16px;
+      /* So now instead of setting the height and the width, we're going to achieve the same
+      thing by adding spacing on the inside of the button. 
+      So the spacing on the inside of the button is called padding, padding allows the BUTTON resize with the TEXT in it */
+      border-radius: 2px;
+      /* BORDER RADIUS Makes the edges of the BUTTON rounded */
+      cursor: pointer;
+      /* CURSOR:POINTER MAKE THE BUTTON SUBSCRIPTION CLICKABLE */
+      margin-right: 8px;
+      /* marging right creates spaces inbetween the SUBSCRIPTION BUTTON and THE JOIN BUTTON */
+      transition: opacity 0.15s;
+      /* Transition makes opacity change smoothly, */
+      vertical-align: top;
+      /* aligns button to the top  */
+      }
+
+  .join-button{
+    background-color: white;
+    border-color: rgb(6, 95, 212);
+    border-style: solid;
+    border-width: 1px;
+    color: rgb(6, 95, 212);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 15px;
+    padding-left: 15px;
+    cursor: pointer;
+    margin-right: 8px;
+    /* Transition takes two value; what to be transited to and also duration inbetween transition, 
+    background color changes over one second, transitions both the background color and the text color smoothly over duration of 0.15s */
+    transition: background-color 0.15s, color 0.15s;
+    vertical-align: top;
+  }
+
+  .tweet-button{
+    background-color: rgb(29, 155, 240);
+    color: white;
+    border: none;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 18px;
+    padding-left: 18px;
+    font-weight: bold;
+    /* Makes FONTS bold */
+    font-size: 15px;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: box-shadow 0.5s;
+  }
+
+  /* BUTTON changes apperance when HOVERED upon */
+  .sub-button:hover{
+    opacity: 0.8;
+  }
+
+  /* BUTTON changes apperance when CLICKED upon */
+  .sub-button:active{
+    opacity: 0.5;
+  }
+
+  .join-button:hover{
+    background-color: rgb(41, 118, 210);
+    color: white;
+  }
+
+  /* BUTTON changes apperance when clicked upon */
+  .join-button:active{
+    opacity: 0.5;
+  }
+
+  .tweet-button:hover{
+    /* HOVER is a PSEUDO CLASS */
+    box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.15);
+    /* BOX-SHADOW creates a shadow on the button upon hovering, it takes 4 values, 
+    first value takes horizontal position of shadow, second value takes vertical position of shadow, 
+    the third value is the blur, the last value is the color */
+    
+    /* "a" value in RGBA symbolises the OPACITY of the color */
+  }
+
+  .tweet-button:active{
+    opacity: 0.7;
+  }

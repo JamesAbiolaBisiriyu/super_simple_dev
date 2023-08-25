@@ -1,93 +1,17 @@
 <!DOCTYPE html>
+
 <!-- tells the browser to use modern version of HTML -->
+
 <html>
 
-  <head><title>TEXT</title></head>
+  <head>
+
+    <title>TEXT</title>
+    <link rel="stylesheet" href="buttons.css">
+    
+  </head>
 
   <body>
-
-    <style>
-
-      /* So if you notice all of our styles right now have a line called font-family: Arial. 
-      Now we can actually clean this up and remove the duplication by creating a new style. */
-      p{
-        font-family: arial;
-       margin-top: 0px;
-       margin-bottom: 0px;
-       /* Css specifity keeps marging specified in style active than the general. priority given to the <p>style over general */
-      }
-
-      .v-title{
-        
-        font-size: 18px;
-        font-weight: bold;     
-        font-style: italic;
-        /* text-align: center;   */
-        width: 300px;
-        /* we set width to break the text in to the next align, alternative to BR break */
-        line-height: 24px;
-        /* I notice there's more spacing between the lines (top and lower text) than what we have.  
-        So to adjust the spacing between lines, the property is called LINE-HEIGHT.*/
-        margin-bottom: 2px;
-      }
-
-      .v-stats{
-
-        color: rgb(96, 96, 96);
-        font-size: 14px;
-        margin-top: 2px;
-        /* margin are reduced to close the default gap between the paragraphs */
-        /* paragraph by default comes with margin at the top and at the bottom */
-        margin-bottom: 16px;
-      }
-
-      .v-author{
-        
-        font-size: 14px;
-        color: rgb(96, 96, 96);
-        margin-bottom: 16px;
-      }
-
-      .v_description{
-        
-        color: rgb(96, 96, 96);
-        font-size: 14px;
-        margin-bottom: 0px;
-        width: 280px;
-        line-height: 20px;
-        margin-bottom: 100px;
-
-        }
-
-      .apple_text{
-
-        margin-bottom: 50px;
-        font-size: 14px;
-        text-align: center;
-        background-color: #e34140;
-        /* text already in a block, background color brings out form of the box */
-        padding: 16px;
-        color: white;
-        
-        
-      }
-
-      .spane:hover{
-
-        text-decoration: underline;
-        cursor: pointer;
-        /* the span element is the most generic text element. It has no styles. 
-        So the span is really useful because we can actually give it a class 
-        and we can style it ourselves and give it any style we want. */
-        
-      }
-
-      .spane{
-        
-        margin-left: 12px;
-      }
-
-    </style>
 
     <p class="v-title">
       Talking Tech and AI with Google CEO Sundar Pichai!
