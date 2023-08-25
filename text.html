@@ -10,6 +10,9 @@
       Now we can actually clean this up and remove the duplication by creating a new style. */
       p{
         font-family: arial;
+       margin-top: 0px;
+       margin-bottom: 0px;
+       /* Css specifity keeps marging specified in style active than the general. priority given to the <p>style over general */
       }
 
       .v-title{
@@ -49,6 +52,27 @@
         margin-bottom: 0px;
         width: 280px;
         line-height: 20px;
+        margin-bottom: 100px;
+        }
+
+      .apple_text{
+        margin-bottom: 50px;
+        font-size: 14px;
+        text-align: center;
+        background-color: #e34140;
+        /* text already in a block, background color brings out form of the box */
+        padding: 16px;
+        color: white;
+        
+        
+      }
+
+      .spane:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        /* the span element is the most generic text element. It has no styles. 
+        So the span is really useful because we can actually give it a class 
+        and we can style it ourselves and give it any style we want. */
       }
 
     </style>
@@ -69,6 +93,10 @@
     <p class="v_description">
       Talking tech and AI on the heels of Google I/O.
       Also a daily driver phone reveal from Google's CEO. Shoutout to Sundar!
+    </p>
+
+    <p class="apple_text">
+      Shop early for the best selection of holiday favourites. <span class="spane">Shop now &#62;</span>
     </p>
 
   </body>
