@@ -11,7 +11,10 @@
     <style>
       .thumbnail{
     width: 300px;   
-    /* WIDTH keeps the image looking nice, adjusting both the height and lenght */     
+    /* WIDTH keeps the image looking nice, adjusting both the height and lenght */
+    display: block;
+    /*Converting THUMBNAIL to DISPLAY:BLOCK, turns the image into a display block, 
+    and this will cause the image to take up the entire line pushing the TEXT BOX/SEARCH BAR down to the next line.*/
                  }
 
       .s-bar{
@@ -22,24 +25,31 @@
         width: 300px;
       }
 
+      /* .v-author, .v-stats{ 
+        display: inline-block;
+      }*/
+      /* even though paragraphs by default are block elements, 
+      we can change them very easily to inline block with the display property so that we can put them beside each other. */
+
     </style>
   </head>
 
   <body>
+    
+    <input class="s-bar" type="text" placeholder="SEARCH">
+
     <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="">
     <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
 
-    <input class="s-bar" type="text" placeholder="SEARCH">
-
-    <p class="v_title">      
+        <p class="v_title">      
         Talking Tech and AI with Google CEO Sundar Pichai!
     </p>
 
-    <p>
+    <p class="v-author">
         Marques Brownlee
     </p>
 
-    <p>
+    <p class="v-stats">
         3.4M views &#183 6 months ago
     </p>
     <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
