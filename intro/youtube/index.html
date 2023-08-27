@@ -9,16 +9,20 @@
     
       
     <style>
+
+          
+
       .thumbnail{
     width: 300px;   
     /* WIDTH keeps the image looking nice, adjusting both the height and lenght */
-    display: block;
+    display: inline;
     /*Converting THUMBNAIL to DISPLAY:BLOCK, turns the image into a display block, 
     and this will cause the image to take up the entire line pushing the TEXT BOX/SEARCH BAR down to the next line.*/
                  }
 
       .s-bar{
       width: 100px;
+      display: block;
       }
 
       .v_title{
@@ -27,9 +31,17 @@
 
       /* .v-author, .v-stats{ 
         display: inline-block;
-      }*/
-      /* even though paragraphs by default are block elements, 
+      }
+       even though paragraphs by default are block elements, 
       we can change them very easily to inline block with the display property so that we can put them beside each other. */
+
+      .v-preview{
+        display: inline-block;
+        vertical-align: top;
+        /* Aligns the two DIV to the top */
+
+        margin-right: 15px;
+      }
 
     </style>
   </head>
@@ -38,6 +50,8 @@
     
     <input class="s-bar" type="text" placeholder="SEARCH">
 
+    <div class="v-preview">
+      
     <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="">
     <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
 
@@ -59,6 +73,41 @@
     <!-- The third type of basic HTML element is called the inline element. Inline elements are basically just text elements. 
       They appear within a line of text. e.g the element STRONG. -->
 
+
+    </div>
     
+    <div class="v-preview">
+      
+      
+  
+      <img class="thumbnail" src="Thumbnails/thumbnail-2.webp" alt="">
+      <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
+  
+          <p class="v_title">      
+            Try Not To Laugh Challenge #9
+      </p>
+  
+      <p class="v-author">
+        Markiplier
+      </p>
+  
+      <p class="v-stats">
+        19M views &#183 4 years ago
+      </p>
+      <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
+      <!-- The second type of element is an inline block element.
+         An inline block element only takes up as much space as it needs to and doesn't take up the entire line.
+         An example of an inline block element is the image element and the input element. -->
+      <!-- The third type of basic HTML element is called the inline element. Inline elements are basically just text elements. 
+        They appear within a line of text. e.g the element STRONG. -->
+  
+  
+      </div>
+
+      
+
   </body>
+
 </html>
+
+
