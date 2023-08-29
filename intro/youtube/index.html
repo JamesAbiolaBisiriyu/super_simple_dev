@@ -25,9 +25,9 @@
       display: block;
       }
 
-      .v_title{
+      /* .v_title{ 
         width: 300px;
-      }
+      }*/
 
       /* .v-author, .v-stats{ 
         display: inline-block;
@@ -43,6 +43,20 @@
         margin-right: 15px;
       }
 
+      .horizontal1{
+        display: inline-block;
+        width: 50px;
+      }
+
+      .horizontal2{
+        display: inline-block;
+        width: 200px;
+      }
+
+      .profile-pic{
+        width: 50px;
+      }
+
     </style>
   </head>
 
@@ -51,29 +65,55 @@
     <input class="s-bar" type="text" placeholder="SEARCH">
 
     <div class="v-preview">
+    <!-- DIV is a container that groups other elements together so that we can create complex layouts, eventually our YouTube project. -->
+    <!-- So what is the nested layouts technique? The basic idea is that there are two types of layouts. The first one is a vertical layout, 
+      where items are on top of each other. And then the second one is a horizontal layout, where items are beside each other. 
+      And by using a combination of vertical and horizontal layouts, we can create almost anything that we see on a website. -->
+     
+      <div class="vertical1">
+      <!-- And we're going to start by creating some vertical layouts. To create a vertical layout. We're going to create two divs. 
+        So this is going to be our vertical layout. 
+        Now remember that divs are block elements by default, so they're going to take up the entire line and appear one on top of another. -->
       
-    <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="">
-    <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
+        <img class="thumbnail" src="Thumbnails/thumbnail-1.webp" alt="">
+        <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
 
-        <p class="v_title">      
-        Talking Tech and AI with Google CEO Sundar Pichai!
-    </p>
+        
 
-    <p class="v-author">
-        Marques Brownlee
-    </p>
+      </div>
 
-    <p class="v-stats">
-        3.4M views &#183 6 months ago
-    </p>
-    <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
-    <!-- The second type of element is an inline block element.
-       An inline block element only takes up as much space as it needs to and doesn't take up the entire line.
-       An example of an inline block element is the image element and the input element. -->
-    <!-- The third type of basic HTML element is called the inline element. Inline elements are basically just text elements. 
-      They appear within a line of text. e.g the element STRONG. -->
+      <div class="vertical2">
 
+        <div class="horizontal1">
+          <img class="profile-pic" src="channel-pic/channel-1.jpeg" alt="">
+        </div>
 
+        <div class="horizontal2">
+          <p class="v_title">      
+            Talking Tech and AI with Google CEO Sundar Pichai!
+        </p>
+    
+        <p class="v-author">
+            Marques Brownlee
+        </p>
+    
+        <p class="v-stats">
+            3.4M views &#183 6 months ago
+        </p>
+        <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
+        <!-- The second type of element is an inline block element.
+           An inline block element only takes up as much space as it needs to and doesn't take up the entire line.
+           An example of an inline block element is the image element and the input element. -->
+        <!-- The third type of basic HTML element is called the inline element. Inline elements are basically just text elements. 
+          They appear within a line of text. e.g the element STRONG. -->
+        </div>
+       
+
+        
+      </div>
+
+    
+      
     </div>
     
     <div class="v-preview">
