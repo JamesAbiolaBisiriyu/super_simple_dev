@@ -4,12 +4,21 @@
 
   <head>
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Climate+Crisis&family=Goldman&family=Inter:wght@400;700&family=Lilita+One&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
     <title>YOUTUBE.COM CLONE</title>
 
     
       
     <style>
 
+    p {
+      font-family: Roboto, Arial;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
           
 
       .thumbnail{
@@ -46,6 +55,8 @@
       .horizontal1{
         display: inline-block;
         width: 50px;
+        vertical-align: top;
+        
       }
 
       .horizontal2{
@@ -54,9 +65,38 @@
       }
 
       .profile-pic{
-        width: 50px;
+        /* width: 50px; */
+        width: 100%;
+
+        border-radius: 25px;
+        
       }
 
+      .tech{
+        margin-top: 0px;
+        font-weight: 500;
+        /* we set the font-weight to 500, which is the medium size that we picked on Google fonts */
+        font-size: 14px;
+        line-height: 20px;
+        /* we're going to change the space between the lines, the property to do that, is called line height. */
+        margin-bottom: 12px;
+      }
+
+      .vertical1{
+        margin-bottom: 10px;
+      }
+
+      .marques,.views{
+
+        color: #606060;
+        font-size: 12px;
+      }
+
+      .marques{
+        margin-bottom: 4px;
+      }
+
+      
     </style>
   </head>
 
@@ -89,18 +129,18 @@
         </div>
 
         <div class="horizontal2">
-          <p class="v_title">      
+          <p class="tech">      
             Talking Tech and AI with Google CEO Sundar Pichai!
         </p>
     
-        <p class="v-author">
+        <p class="marques">
             Marques Brownlee
         </p>
     
-        <p class="v-stats">
+        <p class="views">
             3.4M views &#183 6 months ago
         </p>
-        <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
+          
         <!-- The second type of element is an inline block element.
            An inline block element only takes up as much space as it needs to and doesn't take up the entire line.
            An example of an inline block element is the image element and the input element. -->
@@ -115,36 +155,44 @@
     
       
     </div>
+    <!-- END OF FIRST IMAGE -->
     
     <div class="v-preview">
-      
-      
+       
+        <div class="vertical1">
+        
+          <img class="thumbnail" src="Thumbnails/thumbnail-2.webp" alt="">
+                
   
-      <img class="thumbnail" src="Thumbnails/thumbnail-2.webp" alt="">
-      <!-- we give our image a CLASS in order to be able to call and style it to our taste -->
+        </div>
   
-          <p class="v_title">      
-            Try Not To Laugh Challenge #9
-      </p>
+        <div class="vertical2">
   
-      <p class="v-author">
-        Markiplier
-      </p>
+          <div class="horizontal1">
+            <img class="profile-pic" src="channel-pic/channel-2.jpeg" alt="">
+          </div>
   
-      <p class="v-stats">
-        19M views &#183 4 years ago
-      </p>
-      <!--  A block element takes up the entire line. So a PARAGRAPH by default is a block element.  -->
-      <!-- The second type of element is an inline block element.
-         An inline block element only takes up as much space as it needs to and doesn't take up the entire line.
-         An example of an inline block element is the image element and the input element. -->
-      <!-- The third type of basic HTML element is called the inline element. Inline elements are basically just text elements. 
-        They appear within a line of text. e.g the element STRONG. -->
-  
-  
-      </div>
+          <div class="horizontal2">
 
+            <p class="tech">          
+                Try Not To Laugh Challenge #9
+          </p>
       
+          <p class="marques">
+              Markiplier
+          </p>
+      
+          <p class="views">
+            19M views &#183 4 years ago
+          </p>
+          
+          </div>       
+  
+          
+        </div>     
+        
+      </div>
+        
 
   </body>
 
