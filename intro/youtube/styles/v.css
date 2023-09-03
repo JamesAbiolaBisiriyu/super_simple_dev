@@ -1,0 +1,87 @@
+      
+
+  .thumbnail{
+    width: 100%;
+/* width: 300px;    */
+/* WIDTH keeps the image looking nice, adjusting both the height and lenght */
+/* display: inline; */
+/*Converting THUMBNAIL to DISPLAY:BLOCK, turns the image into a display block, 
+and this will cause the image to take up the entire line pushing the TEXT BOX/SEARCH BAR down to the next line.*/
+             }
+
+  
+  /* .v_title{ 
+    width: 300px;
+  }*/
+
+  /* .v-author, .v-stats{ 
+    display: inline-block;
+  }
+   even though paragraphs by default are block elements, 
+  we can change them very easily to inline block with the display property so that we can put them beside each other. */
+
+  .v-preview{
+    /* display: inline-block; */
+    /* vertical-align: top; */
+    /* Aligns the two DIV to the top */
+
+    /* margin-right: 15px; */
+  }
+
+  .horizontal1{
+    display: inline-block;
+    width: 50px;
+    vertical-align: top;
+    
+  }
+
+  .horizontal2{
+    display: inline-block;
+    width: 200px;
+  }
+
+  .profile-pic{
+    /* width: 50px; */
+    width: 100%;
+
+    border-radius: 25px;
+    
+  }
+
+  .tech{
+    margin-top: 0px;
+    font-weight: 500;
+    /* we set the font-weight to 500, which is the medium size that we picked on Google fonts */
+    font-size: 14px;
+    line-height: 20px;
+    /* we're going to change the space between the lines, the property to do that, is called line height. */
+    margin-bottom: 12px;
+  }
+
+  .vertical1{
+    margin-bottom: 10px;
+  }
+
+  .marques,.views{
+
+    color: #606060;
+    font-size: 12px;
+  }
+
+  .marques{
+    margin-bottom: 4px;
+  }
+
+  .vertical2{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+  }
+
+  .video-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    /* 4 1fr stands for number of columns and size  */
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+
