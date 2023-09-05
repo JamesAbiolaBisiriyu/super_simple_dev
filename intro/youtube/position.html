@@ -8,7 +8,7 @@
 
 </head>
 
-<body style="height: 3000px; margin-top: 55px;">
+<body style="height: 3000px; margin-top: 55px; padding-top:60px; padding-left: 80px;">
 
 <div style="background-color: black; color: white;
 position: fixed; top: 0px; right: 0; left: 0; height: 50px;">
@@ -20,12 +20,53 @@ So for example, if we set it to left, and so these two are opposite directions a
       
 HEADER 
 
+
 </div>
 
   <div style="width: 200px; height: 200px; background-color: lightblue; 
   position: static;">DIV 1</div>
-<!--  -->
+ 
+<div style="background-color: green; color: white; position: fixed;
+ left: 0; bottom: 0; top: 50px; width: 72px;">
 
-  <div style="width: 200px; height: 200px; background-color: lightpink;"> DIV 2 </div>
+<div style="position: absolute; 
+  background-color: red; color: white;
+   top: 0px; left: 0px;">
+                    X
+  
+  </div>
+   
+
+
+  sidebar
+
+   
+  
+
+
+</div>
+
+<div style="position: absolute; 
+background-color: red; color: white;
+ top: 120px; left: 200px;">
+  ABSOLUTE
+
+  <!-- position absolute also takes the same values as 
+    position fixed, but they behave a little bit differently. Elements do not move on position fixed, whereas it moves with ABSOLUTE -->
+</div>
+
+
+
+  <div style="width: 200px; height: 200px; background-color: lightpink; position: relative;">
+    <div style="position: absolute; 
+  background-color: black; color: white;
+   bottom : 10px; right: 10px;">
+                    
+                    5 minutes.
+  
+  </div>
+
+     DIV 2
+     </div>
 </body>
 </html>

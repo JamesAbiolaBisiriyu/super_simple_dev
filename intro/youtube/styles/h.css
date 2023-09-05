@@ -6,6 +6,10 @@
  justify-content: space-between;
  position: fixed; top: 0px; right: 0; left: 0; height: 55px;
  background-color: white;
+ border-bottom-width: 1px;
+ border-bottom-style: solid;
+ border-bottom-color: rgb(222, 222, 222);
+ z-index: 1;
 }
 
 .left-section{
@@ -14,6 +18,10 @@
   display: flex;
   align-items: center;
 }
+
+
+
+
 
 .middle-section{
   display: flex;

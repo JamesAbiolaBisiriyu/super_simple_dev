@@ -60,6 +60,7 @@ and this will cause the image to take up the entire line pushing the TEXT BOX/SE
 
   .vertical1{
     margin-bottom: 10px;
+    position: relative;
   }
 
   .marques,.views{
@@ -85,3 +86,18 @@ and this will cause the image to take up the entire line pushing the TEXT BOX/SE
     row-gap: 40px;
   }
 
+  .v-time{
+    font-family: Roboto, Arial ;
+    border-radius: 2px;
+    font-size: 12px;
+    font-weight: 500;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+  }
