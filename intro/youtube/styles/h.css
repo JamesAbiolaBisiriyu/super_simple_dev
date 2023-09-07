@@ -68,7 +68,9 @@
 .s-button,
 .vs-button,
 .u-container, 
-.yt-container{
+.yt-container,
+.nt-alert
+{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -78,7 +80,9 @@
 .s-button .tool-tip,
 .vs-button .tool-tip,
 .u-container .tool-tip,
-.yt-container .tool-tip{
+.yt-container .tool-tip,
+.nt-alert .tool-tip
+{
   font-family: Roboto, Arial;
   position: absolute;
   background-color: gray;
@@ -101,7 +105,9 @@
 .s-button:hover .tool-tip,
 .vs-button:hover .tool-tip,
 .u-container:hover .tool-tip,
-.yt-container:hover .tool-tip{
+.yt-container:hover .tool-tip,
+.nt-alert:hover .tool-tip
+{
   opacity: 1;
   transition: opacity 0.15s;
 
