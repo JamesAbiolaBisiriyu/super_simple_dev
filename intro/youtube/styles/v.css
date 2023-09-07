@@ -84,17 +84,49 @@ and this will cause the image to take up the entire line pushing the TEXT BOX/SE
     /* 4 1fr stands for number of columns and size  */
     column-gap: 16px;
     row-gap: 40px;
+    /* text-decoration: underline; */
+    /* font-family: Roboto, Arial; */
   }
 
+  @media (max-width : 750px){
+    .video-grid{
+      display: grid;
+      grid-template-columns: auto auto  ;
+      /* 4 1fr stands for number of columns and size  */
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+  }
+
+  @media (min-width: 751px) and (max-width : 999px){
+    .video-grid{
+      display: grid;
+      grid-template-columns: auto auto auto auto  ;
+      /* 4 1fr stands for number of columns and size  */
+      column-gap: 16px;
+      row-gap: 40px;
+    }
+
+  }
+
+  @media (min-width: 1000px){
+  .video-grid{
+    display: grid;
+    grid-template-columns: auto auto auto auto ;
+    /* 4 1fr stands for number of columns and size  */
+    column-gap: 16px;
+    row-gap: 40px;
+  }
+}
+
+
   .v-time{
-    font-family: Roboto, Arial ;
+    
     border-radius: 2px;
     font-size: 12px;
     font-weight: 500;
-    padding-left: 4px;
-    padding-right: 4px;
-    padding-top: 4px;
-    padding-bottom: 4px;
+    padding: 4px;
+    /*  So this first value is going to be the vertical padding. So padding top, padding bottom, and the second value is horizontal padding, padding, left and padding right? The next thing we can do is have four directions. */
     background-color: black;
     color: white;
     position: absolute;
