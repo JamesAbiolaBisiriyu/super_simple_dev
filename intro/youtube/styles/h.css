@@ -10,6 +10,7 @@
  border-bottom-style: solid;
  border-bottom-color: rgb(222, 222, 222);
  z-index: 1;
+ /* makes the header appear above the THUMBNAILS */
 }
 
 .left-section{
@@ -61,12 +62,57 @@
   /* border-color: rgb(192, 192, 192); */
   margin-left: -1px;
   margin-right: 10px;
+  position: relative;
 }
+
+.s-button,
+.vs-button,
+.u-container, 
+.yt-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.s-button .tool-tip,
+.vs-button .tool-tip,
+.u-container .tool-tip,
+.yt-container .tool-tip{
+  font-family: Roboto, Arial;
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  pointer-events: none;
+  white-space: nowrap;
+}
+/* Above code: means that we're targeting the dot tool tip class, not on the entire page,
+ but only inside the search button. */
+ /* you'll notice that because it's inside this button, when we hover over the tooltip with our mouse, it also counts as hovering over the button. We can fix this by disabling hovers on the tooltip and only allow hovers on the button. */
+
+.s-button:hover .tool-tip,
+.vs-button:hover .tool-tip,
+.u-container:hover .tool-tip,
+.yt-container:hover .tool-tip{
+  opacity: 1;
+  transition: opacity 0.15s;
+
+}
+/* Above code: we're going to target all tooltip inside the search button, but only when we hover over it.  */
+
 
 .s-icon{
  height: 25px;
  /* background-color: rgb(240, 240, 240); */
- margin-top: 4px;
+ /* margin-top: 4px; */
   
 }
 
@@ -80,7 +126,7 @@
 
 .vs-icon{
   height: 24px;
-  margin-top: 4px;
+  /* margin-top: 4px; */
 }
 
 .right-section{
@@ -114,6 +160,26 @@
 
 .nt-icon{
   height: 24px;
+  
+}
+
+.nt-alert{
+  position: relative;
+}
+
+.nt-number{
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  color: white;
+  position: absolute;
+  background-color: #cc0000;
+  padding-top: 1px; 
+   padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+  top: -3px;
+  right: -5px;
+  border-radius: 12px;
 }
 
 .my-image {
