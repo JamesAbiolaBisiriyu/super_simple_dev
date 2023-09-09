@@ -97,6 +97,7 @@ and this will cause the image to take up the entire line pushing the TEXT BOX/SE
       row-gap: 40px;
     }
   }
+  
 
   @media (min-width: 751px) and (max-width : 999px){
     .video-grid{
