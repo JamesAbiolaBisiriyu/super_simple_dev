@@ -5,12 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>FLEX BOX PRACTICE</title>
+  <style>
+    .navybar {
+  display: flex;
+  justify-content: space-around;
+  padding: 16px;
+  box-shadow: 0 1px 3px -2px black;
+}
+  </style>
 
 </head>
 
 <body style="padding-bottom: 1000px;">
 
-  <div style="display: flex;
+  <!-- <div style="display: flex;
   flex-direction: row;">
 
     <div style="background-color: lightblue;">DIV 1</div>
@@ -52,12 +60,38 @@
 
 <div style="display: flex;
       flex-direction: row; margin-top: 30px;
-      border-width: 1px; border-style: solid; height: 70px; border-color: gray; justify-content: space-between; align-items: center;">
+      border-width: 1px; border-style: solid; height: 70px; border-color: gray; justify-content: space-between; align-items: center; ">
         <div style="background-color: lightblue;width: 100px;">100 px</div>
         <div style="background-color: lightpink;width: 100px;">100 px</div>
-        <div style="background-color: lightblue;width: 100px;">100 px</div>
+        <div style="background-color: lightblue;width: 1fr;">1fr</div>
       
+</div> -->
+<div class='navybar'>
+  <div class='navylogo'>
+    <img src={logo} alt="Logo" />
+    <p>SHOPPER</p>
+  </div>
+
+  <ul class='navy-menu'>
+    <li>Shop <hr/></li>
+    <li>Men</li>
+    <li>Women</li>
+    <li>Kids</li>
+  </ul>
+
+  <div class='navylogincart'>
+    <button>Login</button>
+    <img src={cart_icon} alt="" />
+    <div class ='navcartcount'>0</div>
+  </div>
+  
+
 </div>
+
+
+
+
+
 
 
 

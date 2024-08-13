@@ -46,6 +46,7 @@ and this will cause the image to take up the entire line pushing the TEXT BOX/SE
     width: 36px;
 
     border-radius: 25px;
+    cursor: pointer;
     
   }
 
